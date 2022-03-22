@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>alexkosh</title>
+    <title>AlexKosh</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
@@ -13,9 +13,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" href="images/logo-bar.png" type="image/png" />
   </head>
   <body>
-    <!-- HEADER -->
     <header class="header">
       <div class="header__bg-img">
         <div class="header__line-top">
@@ -26,23 +26,47 @@
                   <img src="images/logo.png" alt="" />
                 </a>
               </div>
-              <nav class="header__menu">
-                <ul class="header__menu-list">
-                  <li class="header__menu-item">
-                    <a class="header__menu-link" href="#about-me">Обо мне</a>
+              <nav class="header-menu">
+                <ul class="header-menu__list">
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#about-me">Обо мне</a>
                   </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-link" href="#portfolio">Портфолио</a>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#portfolio">Портфолио</a>
                   </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-link" href="#contacts">Контакты</a>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#contacts">Контакты</a>
                   </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-link" href="#form">Заявка</a>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#form">Заявка</a>
                   </li>
                 </ul>
               </nav>
+              <div class="menu-burger">
+                <div class="menu-burger__inner">
+                  <div class="menu-burger__line"></div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="menu-mobile">
+            <ul class="menu-mobile__list">
+              <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#about-me">Обо мне</a>
+                <div class="menu-mobile__line"></div>
+              </li>
+              <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#portfolio">Портфолио</a>
+                <div class="menu-mobile__line"></div>
+              </li>
+              <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#contacts">Контакты</a>
+                <div class="menu-mobile__line"></div>
+              </li>
+              <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#form">Заявка</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="header-content">
@@ -54,13 +78,13 @@
               <div class="header-content__skils">HTML / CSS / JS</div>
               <div class="header-content__author">
                 <span class="header-content__author-span"
-                  >HTML верстальщик</span
+                  >HTML верстальщик -</span
                 >
-                - Александр Кош
+                Александр Кошмилов
               </div>
-              <button class="header-content__button" type="button">
+              <a class="header-content__btn" href="#form">
                 Заказать верстку сайта
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -73,7 +97,6 @@
       </a>
     </div>
 
-    <!-- ABOUT ME -->
     <section class="about-me" id="about-me">
       <div class="container">
         <div class="title-section">
@@ -87,40 +110,49 @@
             <img class="about-me__info-img" src="images/my-photo.jpg" alt="" />
           </div>
           <div class="about-me__info-block">
-            <p class="info-block__my-name">Александр Игоревич Кош</p>
-            <p class="info-block__title">
-              Профессиональный HTML – верстальщик, с интеграцией сайтов на CMS.
-            </p>
             <p class="info-block__color-title">О себе:</p>
             <p class="info-block__text">
-              Приветствую вас на своем сайте портфолио. Я занимаюсь
-              веб-разработкой уже 2 года, постоянно совершенствуюсь, и изучаю
-              новые технологии. Работая со мной, вы получаете полностью готовый
-              проект, будь то верстка или сайт под ключ.
+              Здравствуйте! Меня зовут Александр, я занимаюсь версткой и
+              разработкой веб-сайтов. Постоянно слежу за профессиональными
+              трендами, использую только самые передовые технологии и решения.
             </p>
-            <p class="info-block__color-title">Порядок выполнения работы:</p>
             <p class="info-block__text">
-              Я начинаю выполнять работу, после полного согласования проекта с
-              заказчиком. Делаю свою работу качественно и в срок, в некоторых
-              случаях даже раньше. Работаю по предоплате 50% от стоимости
-              заказа. Даю гарантию на верстку, в течении недели после сдачи
-              проекта, я бесплатно исправлю свои ошибки, которые могут
-              возникнуть при эксплуатации сайта.
+              В работе использую компонентный подход (на базе БЭМ). Верстаю
+              адаптивно, кроссбраузерно, использую GULP (для ускорения работы),
+              и препроцессор SASS. Bootstrap использую, но предпочитаю без него,
+              так как несет нагрузку на сайт. Использую контроль версий git,
+              могу работать в команде. Работа с svg, css-анимация, и все что
+              необходимо для хорошей верстки.
             </p>
-            <p class="info-block__color-title">Знания технологий:</p>
+            <p class="info-block__color-title">Стек технологий:</p>
             <ul class="info-block__skills">
-              <li class="info-block__skills-li">HTML5 / CSS3</li>
-              <li class="info-block__skills-li">JavaScript / jQuery</li>
-              <li class="info-block__skills-li">SCSS / SASS</li>
+              <li class="info-block__skills-li"><b>HTML5 / CSS3 (SASS)</b></li>
+              <li class="info-block__skills-li">методология <b>БЭМ</b></li>
+              <li class="info-block__skills-li">
+                <b>jQuery</b> (внедряю разные плагины в сайта)
+              </li>
+              <li class="info-block__skills-li">таск-менеджер <b>GULP</b></li>
               <li class="info-block__skills-li">
                 Блочная / Адаптивная / Резиновая верстка.
               </li>
-              <li class="info-block__skills-li">Responsive</li>
-              <li class="info-block__skills-li">Gulp</li>
-              <li class="info-block__skills-li">Git</li>
-              <li class="info-block__skills-li">WordPress</li>
+              <li class="info-block__skills-li">
+                верстаю на <b>(flex/grid)</b>
+              </li>
+              <li class="info-block__skills-li">
+                <b>Bootstrap</b>
+              </li>
+              <li class="info-block__skills-li">
+                система контроля версий <b>Git</b>
+              </li>
+              <li class="info-block__skills-li">
+                графические редакторы: <b>Photoshop, Figma</b>
+              </li>
               <li class="info-block__skills-li">
                 Аккуратный, логичный, продуманный код.
+              </li>
+              <li class="info-block__skills-li">
+                изучаю <b>JavaScript</b>, в дальнейшем планирую стать
+                front-end/React разработчиком
               </li>
             </ul>
           </div>
@@ -128,7 +160,6 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="title-section">
@@ -139,55 +170,75 @@
         </div>
         <div class="portfolio-list">
           <a
-            class="portfolio-list__link portfolio-list__link--getstyle"
-            href="https://alexkosh-dev.github.io/getstyle/dist/"
+            class="portfolio-list__link portfolio-list__link--appetit"
+            href="https://alexkosh-dev.github.io/appetit/dist/"
             target="_blank"
           >
-					<div class="portfolio-list__link-bg">
-						<div class="svg">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 384 448">
-
-								<path style="fill: #00b1eb"
-								d="M145.5 327c0 13.5-12.25 16.5-23.25 16.5-10.75 0-26.75-1.75-26.75-15.75 0-13.75 13.5-16 24.5-16 10.5 0 25.5 1.75 25.5 15.25zM136.5 210.5c0 12.5-5 21.25-18.5 21.25-13.75 0-19.25-8-19.25-21s5-22.5 19.25-22.5c12.75 0 18.5 10.5 18.5 22.25zM178 191.75v-31.25c-10.75 4-22.25 7.25-33.75 7.25-8.25-4.75-17.75-7.25-27.5-7.25-28.5 0-51 21-51 50 0 15.5 10.25 37 25.75 42.25v0.75c-8 3.5-9.5 13.25-9.5 21.25 0 8.25 3 15 10.25 19.25v0.75c-17 5.5-28.25 16.25-28.25 34.75 0 31.75 30.25 40.75 56.75 40.75 32 0 56-11.75 56-47 0-25-22.75-32.5-43.5-36.25-7-1.25-19-6.25-19-15 0-8.25 4.5-11.75 12.25-13 25.5-5 41.75-24.75 41.75-51 0-4.5-1-8.75-2.5-13 4-1 8.25-2 12.25-3.25zM192.75 296.5h34.25c-0.5-6.75-0.5-13.75-0.5-20.5v-96.75c0-5.75 0-11.5 0.5-17.25h-34.25c0.75 5.75 0.75 12 0.75 17.75v98c0 6.25 0 12.5-0.75 18.75zM320 292.5v-30.25c-5 3.5-11 5.25-17 5.25-11.25 0-13.25-11.25-13.25-20.5v-56.25h13c4.5 0 8.75 0.5 13.25 0.5v-29.25h-26.25c0-8.5-0.5-17 0.75-25.5h-35c0.75 4.5 1 9 1 13.75v11.75h-15v29.25c3-0.25 6-0.75 9.25-0.75 1.75 0 3.75 0.25 5.75 0.25v0.5h-0.5v54.25c0 27 4 53 37 53 9.25 0 18.75-1.5 27-6zM231 116c0-11.75-8.75-22.75-21-22.75s-21.25 10.75-21.25 22.75c0 11.75 9.25 22.25 21.25 22.25s21-10.75 21-22.25zM384 104v240c0 39.75-32.25 72-72 72h-240c-39.75 0-72-32.25-72-72v-240c0-39.75 32.25-72 72-72h240c39.75 0 72 32.25 72 72z"></path>
-								</svg>
-						</div>
-					</div>
+            <div class="portfolio-list__link-bg">
+              <div class="svg">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 384 448"
+                >
+                  <path
+                    style="fill: #00b1eb"
+                    d="M145.5 327c0 13.5-12.25 16.5-23.25 16.5-10.75 0-26.75-1.75-26.75-15.75 0-13.75 13.5-16 24.5-16 10.5 0 25.5 1.75 25.5 15.25zM136.5 210.5c0 12.5-5 21.25-18.5 21.25-13.75 0-19.25-8-19.25-21s5-22.5 19.25-22.5c12.75 0 18.5 10.5 18.5 22.25zM178 191.75v-31.25c-10.75 4-22.25 7.25-33.75 7.25-8.25-4.75-17.75-7.25-27.5-7.25-28.5 0-51 21-51 50 0 15.5 10.25 37 25.75 42.25v0.75c-8 3.5-9.5 13.25-9.5 21.25 0 8.25 3 15 10.25 19.25v0.75c-17 5.5-28.25 16.25-28.25 34.75 0 31.75 30.25 40.75 56.75 40.75 32 0 56-11.75 56-47 0-25-22.75-32.5-43.5-36.25-7-1.25-19-6.25-19-15 0-8.25 4.5-11.75 12.25-13 25.5-5 41.75-24.75 41.75-51 0-4.5-1-8.75-2.5-13 4-1 8.25-2 12.25-3.25zM192.75 296.5h34.25c-0.5-6.75-0.5-13.75-0.5-20.5v-96.75c0-5.75 0-11.5 0.5-17.25h-34.25c0.75 5.75 0.75 12 0.75 17.75v98c0 6.25 0 12.5-0.75 18.75zM320 292.5v-30.25c-5 3.5-11 5.25-17 5.25-11.25 0-13.25-11.25-13.25-20.5v-56.25h13c4.5 0 8.75 0.5 13.25 0.5v-29.25h-26.25c0-8.5-0.5-17 0.75-25.5h-35c0.75 4.5 1 9 1 13.75v11.75h-15v29.25c3-0.25 6-0.75 9.25-0.75 1.75 0 3.75 0.25 5.75 0.25v0.5h-0.5v54.25c0 27 4 53 37 53 9.25 0 18.75-1.5 27-6zM231 116c0-11.75-8.75-22.75-21-22.75s-21.25 10.75-21.25 22.75c0 11.75 9.25 22.25 21.25 22.25s21-10.75 21-22.25zM384 104v240c0 39.75-32.25 72-72 72h-240c-39.75 0-72-32.25-72-72v-240c0-39.75 32.25-72 72-72h240c39.75 0 72 32.25 72 72z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
           </a>
           <a
             class="portfolio-list__link portfolio-list__link--yourstyle"
             href="https://alexkosh-dev.github.io/your-style/dist/"
             target="_blank"
           >
-					<div class="portfolio-list__link-bg">
-						<div class="svg">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 384 448">
-
-								<path style="fill: #00b1eb"
-								d="M145.5 327c0 13.5-12.25 16.5-23.25 16.5-10.75 0-26.75-1.75-26.75-15.75 0-13.75 13.5-16 24.5-16 10.5 0 25.5 1.75 25.5 15.25zM136.5 210.5c0 12.5-5 21.25-18.5 21.25-13.75 0-19.25-8-19.25-21s5-22.5 19.25-22.5c12.75 0 18.5 10.5 18.5 22.25zM178 191.75v-31.25c-10.75 4-22.25 7.25-33.75 7.25-8.25-4.75-17.75-7.25-27.5-7.25-28.5 0-51 21-51 50 0 15.5 10.25 37 25.75 42.25v0.75c-8 3.5-9.5 13.25-9.5 21.25 0 8.25 3 15 10.25 19.25v0.75c-17 5.5-28.25 16.25-28.25 34.75 0 31.75 30.25 40.75 56.75 40.75 32 0 56-11.75 56-47 0-25-22.75-32.5-43.5-36.25-7-1.25-19-6.25-19-15 0-8.25 4.5-11.75 12.25-13 25.5-5 41.75-24.75 41.75-51 0-4.5-1-8.75-2.5-13 4-1 8.25-2 12.25-3.25zM192.75 296.5h34.25c-0.5-6.75-0.5-13.75-0.5-20.5v-96.75c0-5.75 0-11.5 0.5-17.25h-34.25c0.75 5.75 0.75 12 0.75 17.75v98c0 6.25 0 12.5-0.75 18.75zM320 292.5v-30.25c-5 3.5-11 5.25-17 5.25-11.25 0-13.25-11.25-13.25-20.5v-56.25h13c4.5 0 8.75 0.5 13.25 0.5v-29.25h-26.25c0-8.5-0.5-17 0.75-25.5h-35c0.75 4.5 1 9 1 13.75v11.75h-15v29.25c3-0.25 6-0.75 9.25-0.75 1.75 0 3.75 0.25 5.75 0.25v0.5h-0.5v54.25c0 27 4 53 37 53 9.25 0 18.75-1.5 27-6zM231 116c0-11.75-8.75-22.75-21-22.75s-21.25 10.75-21.25 22.75c0 11.75 9.25 22.25 21.25 22.25s21-10.75 21-22.25zM384 104v240c0 39.75-32.25 72-72 72h-240c-39.75 0-72-32.25-72-72v-240c0-39.75 32.25-72 72-72h240c39.75 0 72 32.25 72 72z"></path>
-								</svg>
-						</div>
-					</div>
+            <div class="portfolio-list__link-bg">
+              <div class="svg">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 384 448"
+                >
+                  <path
+                    style="fill: #00b1eb"
+                    d="M145.5 327c0 13.5-12.25 16.5-23.25 16.5-10.75 0-26.75-1.75-26.75-15.75 0-13.75 13.5-16 24.5-16 10.5 0 25.5 1.75 25.5 15.25zM136.5 210.5c0 12.5-5 21.25-18.5 21.25-13.75 0-19.25-8-19.25-21s5-22.5 19.25-22.5c12.75 0 18.5 10.5 18.5 22.25zM178 191.75v-31.25c-10.75 4-22.25 7.25-33.75 7.25-8.25-4.75-17.75-7.25-27.5-7.25-28.5 0-51 21-51 50 0 15.5 10.25 37 25.75 42.25v0.75c-8 3.5-9.5 13.25-9.5 21.25 0 8.25 3 15 10.25 19.25v0.75c-17 5.5-28.25 16.25-28.25 34.75 0 31.75 30.25 40.75 56.75 40.75 32 0 56-11.75 56-47 0-25-22.75-32.5-43.5-36.25-7-1.25-19-6.25-19-15 0-8.25 4.5-11.75 12.25-13 25.5-5 41.75-24.75 41.75-51 0-4.5-1-8.75-2.5-13 4-1 8.25-2 12.25-3.25zM192.75 296.5h34.25c-0.5-6.75-0.5-13.75-0.5-20.5v-96.75c0-5.75 0-11.5 0.5-17.25h-34.25c0.75 5.75 0.75 12 0.75 17.75v98c0 6.25 0 12.5-0.75 18.75zM320 292.5v-30.25c-5 3.5-11 5.25-17 5.25-11.25 0-13.25-11.25-13.25-20.5v-56.25h13c4.5 0 8.75 0.5 13.25 0.5v-29.25h-26.25c0-8.5-0.5-17 0.75-25.5h-35c0.75 4.5 1 9 1 13.75v11.75h-15v29.25c3-0.25 6-0.75 9.25-0.75 1.75 0 3.75 0.25 5.75 0.25v0.5h-0.5v54.25c0 27 4 53 37 53 9.25 0 18.75-1.5 27-6zM231 116c0-11.75-8.75-22.75-21-22.75s-21.25 10.75-21.25 22.75c0 11.75 9.25 22.25 21.25 22.25s21-10.75 21-22.25zM384 104v240c0 39.75-32.25 72-72 72h-240c-39.75 0-72-32.25-72-72v-240c0-39.75 32.25-72 72-72h240c39.75 0 72 32.25 72 72z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
           </a>
-					<a
-					class="portfolio-list__link portfolio-list__link--appetit"
-					href="https://alexkosh-dev.github.io/appetit/dist/"
-					target="_blank"
-				>
-					<div class="portfolio-list__link-bg">
-						<div class="svg">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 384 448">
-
-								<path style="fill: #00b1eb"
-								d="M145.5 327c0 13.5-12.25 16.5-23.25 16.5-10.75 0-26.75-1.75-26.75-15.75 0-13.75 13.5-16 24.5-16 10.5 0 25.5 1.75 25.5 15.25zM136.5 210.5c0 12.5-5 21.25-18.5 21.25-13.75 0-19.25-8-19.25-21s5-22.5 19.25-22.5c12.75 0 18.5 10.5 18.5 22.25zM178 191.75v-31.25c-10.75 4-22.25 7.25-33.75 7.25-8.25-4.75-17.75-7.25-27.5-7.25-28.5 0-51 21-51 50 0 15.5 10.25 37 25.75 42.25v0.75c-8 3.5-9.5 13.25-9.5 21.25 0 8.25 3 15 10.25 19.25v0.75c-17 5.5-28.25 16.25-28.25 34.75 0 31.75 30.25 40.75 56.75 40.75 32 0 56-11.75 56-47 0-25-22.75-32.5-43.5-36.25-7-1.25-19-6.25-19-15 0-8.25 4.5-11.75 12.25-13 25.5-5 41.75-24.75 41.75-51 0-4.5-1-8.75-2.5-13 4-1 8.25-2 12.25-3.25zM192.75 296.5h34.25c-0.5-6.75-0.5-13.75-0.5-20.5v-96.75c0-5.75 0-11.5 0.5-17.25h-34.25c0.75 5.75 0.75 12 0.75 17.75v98c0 6.25 0 12.5-0.75 18.75zM320 292.5v-30.25c-5 3.5-11 5.25-17 5.25-11.25 0-13.25-11.25-13.25-20.5v-56.25h13c4.5 0 8.75 0.5 13.25 0.5v-29.25h-26.25c0-8.5-0.5-17 0.75-25.5h-35c0.75 4.5 1 9 1 13.75v11.75h-15v29.25c3-0.25 6-0.75 9.25-0.75 1.75 0 3.75 0.25 5.75 0.25v0.5h-0.5v54.25c0 27 4 53 37 53 9.25 0 18.75-1.5 27-6zM231 116c0-11.75-8.75-22.75-21-22.75s-21.25 10.75-21.25 22.75c0 11.75 9.25 22.25 21.25 22.25s21-10.75 21-22.25zM384 104v240c0 39.75-32.25 72-72 72h-240c-39.75 0-72-32.25-72-72v-240c0-39.75 32.25-72 72-72h240c39.75 0 72 32.25 72 72z"></path>
-								</svg>
-						</div>
-					</div>
-				</a>
+          <a
+            class="portfolio-list__link portfolio-list__link--getstyle"
+            href="https://alexkosh-dev.github.io/getstyle/dist/"
+            target="_blank"
+          >
+            <div class="portfolio-list__link-bg">
+              <div class="svg">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 384 448"
+                >
+                  <path
+                    style="fill: #00b1eb"
+                    d="M145.5 327c0 13.5-12.25 16.5-23.25 16.5-10.75 0-26.75-1.75-26.75-15.75 0-13.75 13.5-16 24.5-16 10.5 0 25.5 1.75 25.5 15.25zM136.5 210.5c0 12.5-5 21.25-18.5 21.25-13.75 0-19.25-8-19.25-21s5-22.5 19.25-22.5c12.75 0 18.5 10.5 18.5 22.25zM178 191.75v-31.25c-10.75 4-22.25 7.25-33.75 7.25-8.25-4.75-17.75-7.25-27.5-7.25-28.5 0-51 21-51 50 0 15.5 10.25 37 25.75 42.25v0.75c-8 3.5-9.5 13.25-9.5 21.25 0 8.25 3 15 10.25 19.25v0.75c-17 5.5-28.25 16.25-28.25 34.75 0 31.75 30.25 40.75 56.75 40.75 32 0 56-11.75 56-47 0-25-22.75-32.5-43.5-36.25-7-1.25-19-6.25-19-15 0-8.25 4.5-11.75 12.25-13 25.5-5 41.75-24.75 41.75-51 0-4.5-1-8.75-2.5-13 4-1 8.25-2 12.25-3.25zM192.75 296.5h34.25c-0.5-6.75-0.5-13.75-0.5-20.5v-96.75c0-5.75 0-11.5 0.5-17.25h-34.25c0.75 5.75 0.75 12 0.75 17.75v98c0 6.25 0 12.5-0.75 18.75zM320 292.5v-30.25c-5 3.5-11 5.25-17 5.25-11.25 0-13.25-11.25-13.25-20.5v-56.25h13c4.5 0 8.75 0.5 13.25 0.5v-29.25h-26.25c0-8.5-0.5-17 0.75-25.5h-35c0.75 4.5 1 9 1 13.75v11.75h-15v29.25c3-0.25 6-0.75 9.25-0.75 1.75 0 3.75 0.25 5.75 0.25v0.5h-0.5v54.25c0 27 4 53 37 53 9.25 0 18.75-1.5 27-6zM231 116c0-11.75-8.75-22.75-21-22.75s-21.25 10.75-21.25 22.75c0 11.75 9.25 22.25 21.25 22.25s21-10.75 21-22.25zM384 104v240c0 39.75-32.25 72-72 72h-240c-39.75 0-72-32.25-72-72v-240c0-39.75 32.25-72 72-72h240c39.75 0 72 32.25 72 72z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACTS -->
     <section class="contacts" id="contacts">
       <div class="container">
         <div class="title-section">
@@ -197,46 +248,62 @@
           </div>
         </div>
         <div class="contacts-social">
-          <div class="contacts-social__mail">
-            <a class="contacts-social__link" href="javascript:void(0);">
-              <img class="contacts-social__img" src="images/mail.png" alt="" />
+          <div class="contacts-social__item">
+            <a class="contacts-social__item-link" href="javascript:void(0);">
+              <img
+                class="contacts-social__item-img"
+                src="images/mail.png"
+                alt=""
+              />
             </a>
-            <div class="contacts-social__text">
+            <div class="contacts-social__item-text">
               <a href="javascript:void(0);">koshmilov@gmail.com</a>
             </div>
           </div>
-          <div class="contacts-social__phone">
-            <a class="contacts-social__link" href="tel:80934581012">
-              <img src="images/phone.png" alt="" />
+          <div class="contacts-social__item">
+            <a class="contacts-social__item-link" href="tel:80934581012">
+              <img
+                class="contacts-social__item-img"
+                src="images/phone.png"
+                alt=""
+              />
             </a>
-            <div class="contacts-social__text">
+            <div class="contacts-social__item-text">
               <a href="tel:80934581012">+38(093)4581012</a>
               <p class="contacts-social__mess">viber/telegram</p>
             </div>
           </div>
-          <div class="contacts-social__git">
+          <div class="contacts-social__item">
             <a
-              class="contacts-social__link"
+              class="contacts-social__item-link"
               href="https://github.com/alexkosh-dev"
               target="_blank"
             >
-              <img src="images/github.png" alt="" />
+              <img
+                class="contacts-social__item-img"
+                src="images/github.png"
+                alt=""
+              />
             </a>
-            <div class="contacts-social__text">
+            <div class="contacts-social__item-text">
               <a href="https://github.com/alexkosh-dev" target="_blank"
                 >github.com/alexkosh-dev</a
               >
             </div>
           </div>
-          <div class="contacts-social__fb">
+          <div class="contacts-social__item">
             <a
-              class="contacts-social__link"
+              class="contacts-social__item-link"
               href="https://www.facebook.com/profile.php?id=100017966054219"
               target="_blank"
             >
-              <img src="images/facebook.png" alt="" />
+              <img
+                class="contacts-social__item-img"
+                src="images/facebook.png"
+                alt=""
+              />
             </a>
-            <div class="contacts-social__text">
+            <div class="contacts-social__item-text">
               <a
                 href="https://www.facebook.com/profile.php?id=100017966054219"
                 target="_blank"
@@ -249,7 +316,6 @@
       </div>
     </section>
 
-    <!-- FORM -->
     <section class="form" id="form">
       <div class="container">
         <div class="title-section">
@@ -267,18 +333,22 @@
           <input
             class="form-wrapper__input"
             type="text"
+            name="name"
             placeholder="Ваше имя"
+            required
           />
           <input
             class="form-wrapper__input"
             type="email"
+            name="email"
             placeholder="Ваш Email"
+            required
           />
           <textarea
             class="form-wrapper__text"
             placeholder="Сообщение"
           ></textarea>
-          <button class="form-wrapper__btn" type="button">Отправить</button>
+          <button class="form-wrapper__btn" type="submit">Отправить</button>
         </form>
         <div class="form__copyright">
           <p>Copyright © 2020 - <span id="alex">AlexKosh</span></p>

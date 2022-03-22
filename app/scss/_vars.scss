@@ -1,1 +1,26 @@
 $main: #f9f4e6;
+$info: #363634;
+$blue: #00b1eb;
+$yellow: #f1d881;
+$green: #08eb8e;
+$bg_top: rgba(54, 54, 52, 0.8);
+$title: #363634;
+
+%btn {
+  background-color: $blue;
+  padding: 25px 15px;
+  border-radius: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: $main;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $yellow;
+    color: $info;
+  }
+}
